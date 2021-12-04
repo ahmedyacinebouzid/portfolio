@@ -3,3 +3,65 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.prject-container {
+    position: relative;
+}
+
+.prject-container:hover {
+    position: relative;
+    box-shadow: rgba(248, 248, 248, 0.438) 0px 5px 5px, rgba(255, 255, 255, 0.459) 0px -12px 30px, rgba(255, 255, 255, 0.466) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.rgb::after {
+    content: "";
+    background: linear-gradient(45deg, #e6e6e6f5 0%, rgb(51, 1, 43) 50%, #ffffff 100%) repeat 0% 0% / 300% 100%;
+    position: absolute;
+    inset: -3px;
+    border-radius: 16px;
+    filter: blur(16px);
+    z-index: 1;
+    opacity: 0.2;
+    /*or z-index */
+    animation: rgb 6s linear infinite;
+}
+
+@keyframes rgb {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.background {
+    position: relative;
+}
+
+.rgb2::after {
+    content: "";
+    background: linear-gradient(45deg, #1f0000f5 0%, rgb(51, 1, 43) 50%, #220000 100%) repeat 0% 0% / 300% 100%;
+    position: absolute;
+    inset: -3px;
+    border-radius: 16px;
+    filter: blur(16px);
+    z-index: -1;
+    /*or z-index */
+    animation: rgb 6s linear infinite;
+}
+
+@keyframes rgb2 {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
