@@ -79,9 +79,16 @@
     }
 }
 
+.input-style {
+    position: relative;
+    padding: 3rem;
+    background-color: #000000;
+    border-radius: 3rem 3rem 3rem 3rem;
+}
+
 .rgb3::after {
     content: "";
-    background: linear-gradient(45deg, #1f0000f5 0%, rgb(51, 1, 43) 50%, #220000 100%) repeat 0% 0% / 300% 100%;
+    background: linear-gradient(45deg, #eeeeeef5 0%, rgb(255, 255, 255) 50%, #fcfcfc 100%) repeat 0% 0% / 300% 100%;
     position: absolute;
     inset: -3px;
     border-radius: 16px;
